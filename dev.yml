@@ -1,0 +1,7 @@
+---
+name: personal-dictionary
+up:
+- ruby: 2.3.1
+- bundler
+commands:
+  test: bundle exec rake test
