@@ -21,12 +21,12 @@ end
 class MeaningService
   attr_accessor :word
 
-  def initialize(word)
-    self.word = word
+  def initialize(vocabulary_entry)
+    self.word = vocabulary_entry[:word].strip
   end
 
   def find
-    entry = Meaning::MeaningLab.new(self.word[:word]).dictionary
+    entry = Meaning::MeaningLab.new(word).dictionary
   rescue StandardError => e
     puts "Got an error: #{e.message}"
   end
