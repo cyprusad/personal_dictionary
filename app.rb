@@ -1,4 +1,3 @@
-require 'airtable'
 require 'airrecord'
 require 'meaning'
 require 'yaml'
